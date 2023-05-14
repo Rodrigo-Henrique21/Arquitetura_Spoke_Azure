@@ -1,0 +1,171 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "brazilsouth"
+        },
+        "extendedLocation": {
+            "value": {}
+        },
+        "virtualNetworkName": {
+            "value": "vnet-spoke-prod-001"
+        },
+        "tagsByResource": {
+            "value": {
+                "Microsoft.Network/virtualNetworks": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/ddosProtectionPlans": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/publicIPAddresses": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/azureFirewalls": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/bastionHosts": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/natGateways": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/publicIPPrefixes": {
+                    "Az104": "vnet spoke 01"
+                },
+                "Microsoft.Network/networkSecurityGroups": {
+                    "Az104": "vnet spoke 01"
+                }
+            }
+        },
+        "addressPrefixes": {
+            "value": [
+                "192.160.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "default2",
+                    "properties": {
+                        "addressPrefix": "192.160.1.0/24"
+                    }
+                }
+            ]
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        },
+        "firewallEnabled": {
+            "value": false
+        },
+        "bastionEnabled": {
+            "value": false
+        },
+        "ddosProtectionPlanIsNew": {
+            "value": false
+        },
+        "firewallPublicIpAddressIsNew": {
+            "value": true
+        },
+        "firewallPolicyIsNew": {
+            "value": false
+        },
+        "firewallPolicyManagementPublicIPAddressIsNew": {
+            "value": false
+        },
+        "bastionPublicIpAddressIsNew": {
+            "value": true
+        },
+        "bastionNsgIsNew": {
+            "value": false
+        },
+        "ddosProtectionPlanName": {
+            "value": "##ddos-protection-plan-name-not-set##"
+        },
+        "ddosProtectionPlanId": {
+            "value": "##ddos-protection-plan-id-not-set##"
+        },
+        "firewallName": {
+            "value": "##firewall-name-not-set##"
+        },
+        "firewallSkuTier": {
+            "value": "Standard"
+        },
+        "firewallPublicIpAddressName": {
+            "value": "vnet-spoke-prod-001-firewall-publicIpAddress"
+        },
+        "firewallPublicIpAddressId": {
+            "value": "##firewall-public-ip-id-not-set##"
+        },
+        "firewallPolicyName": {
+            "value": "##firewall-policy-name-not-set##"
+        },
+        "firewallPolicyId": {
+            "value": "##firewall-policy-id-not-set##"
+        },
+        "firewallPolicyTier": {
+            "value": "Standard"
+        },
+        "firewallPolicyManagementPublicIPAddressName": {
+            "value": "##firewall-policy-management-public-i-p-address-name-not-set##"
+        },
+        "firewallPolicyManagementPublicIPAddressId": {
+            "value": "##firewall-policy-management-public-i-p-address-id-not-set##"
+        },
+        "bastionName": {
+            "value": "##bastion-name-not-set##"
+        },
+        "bastionPublicIpAddressName": {
+            "value": "vnet-spoke-prod-001-bastion-publicIpAddress"
+        },
+        "bastionPublicIPAddressId": {
+            "value": "##bastion-public-i-p-address-id-not-set##"
+        },
+        "bastionNsgName": {
+            "value": "##bastion-nsg-name-not-set##"
+        },
+        "bastionNsgId": {
+            "value": "##bastion-nsg-id-not-set##"
+        },
+        "natGatewaysWithNewPublicIpAddress": {
+            "value": []
+        },
+        "natGatewaysWithoutNewPublicIpAddress": {
+            "value": []
+        },
+        "natGatewayPublicIpAddressesNewNames": {
+            "value": []
+        },
+        "networkSecurityGroupsNew": {
+            "value": []
+        },
+        "ipv6Enabled": {
+            "value": false
+        },
+        "subnetCount": {
+            "value": 1
+        },
+        "addressSpaceStartingAddressChanged": {
+            "value": true
+        },
+        "addressSpaceAddressSizeChanged": {
+            "value": false
+        },
+        "defaultSubnetChanged": {
+            "value": true
+        },
+        "subnetsInfo": {
+            "value": [
+                {
+                    "cidr": "192.160.1.0/24",
+                    "name": "Default",
+                    "natGw": "none",
+                    "nsg": "none",
+                    "udr": "none"
+                }
+            ]
+        }
+    }
+}

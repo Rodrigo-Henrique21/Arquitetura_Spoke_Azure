@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "brazilsouth"
+        },
+        "networkInterfaceName": {
+            "value": "vm-spoke2-001287"
+        },
+        "subnetName": {
+            "value": "default2"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/6679eaa7-f2cf-437f-b11a-54c5438059f6/resourceGroups/RG-Az104-Prod/providers/Microsoft.Network/virtualNetworks/vnet-spoke-prod-002"
+        },
+        "publicIpAddressName": {
+            "value": "vm-spoke2-001-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "pipDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineName": {
+            "value": "vm-spoke2-001"
+        },
+        "virtualMachineComputerName": {
+            "value": "vm-spoke2-001"
+        },
+        "virtualMachineRG": {
+            "value": "RG-Az104-Prod"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "nicDeleteOption": {
+            "value": "Delete"
+        },
+        "adminUsername": {
+            "value": "admhubb"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        }
+    }
+}

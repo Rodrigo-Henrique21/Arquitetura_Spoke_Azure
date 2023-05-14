@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "brazilsouth"
+        },
+        "networkInterfaceName": {
+            "value": "vm-hubb-001967"
+        },
+        "subnetName": {
+            "value": "defalt"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/6679eaa7-f2cf-437f-b11a-54c5438059f6/resourceGroups/RG-Az104-Prod/providers/Microsoft.Network/virtualNetworks/vnet-hub-prod-001"
+        },
+        "publicIpAddressName": {
+            "value": "vm-hubb-001-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "pipDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineName": {
+            "value": "vm-hubb-001"
+        },
+        "virtualMachineComputerName": {
+            "value": "vm-hubb-001"
+        },
+        "virtualMachineRG": {
+            "value": "RG-Az104-Prod"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B2s"
+        },
+        "nicDeleteOption": {
+            "value": "Delete"
+        },
+        "adminUsername": {
+            "value": "admhubb"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "availabilitySetName": {
+            "value": "availability-set-hubb-001"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": 2
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": 5
+        }
+    }
+}
